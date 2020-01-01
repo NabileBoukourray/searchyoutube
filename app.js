@@ -18,7 +18,7 @@ $(function() {
                     key: 'AIzaSyD-A54cg4_xQnDJCUtoY-ZWbm4DispeR58',
                     q: searchTerm,
                     part: 'snippet',
-                    maxResults: 1,
+                    maxResults: 10,
                     type: 'video',
                     videoEmbeddable: true,
                 }
@@ -46,12 +46,9 @@ $(function() {
     }
 
     ul.on("click", "li", function(e) {
-
-
-
-        /*let id = $(this).attr('id');
-        let url = `https://www.youtube.com/embed/RVonJchNPEA?autoplay=1&origin=http://example.com`;
-        $("#ytplayer").attr("src", url);*/
+        let id = $(this).attr('id');
+        let url = `http://www.youtube.com/embed/${id}?enablejsapi=1&origin=http://example.com`;
+        $("#ytplayer").attr("src", url);
 
     });
 
