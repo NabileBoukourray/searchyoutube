@@ -27,7 +27,7 @@ $(function() {
             .done(function(data) {
                 let results = data.items;
                 let id = results[0].id.videoId
-                let url = `https://www.youtube.com/embed/${id}?enablejsapi=1`;
+                let url = `https://www.youtube.com/embed/${id}?enablejsapi=1&origin=https://www.example.com`;
                 $("#player").attr("src", url);
 
                 results.forEach((a) => {
