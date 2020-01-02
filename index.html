@@ -11,16 +11,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Youtube search</a>
+    <nav class="navbar navbar-dark bg-danger py-3">
+        <a class="navbar-brand px-md-5" href="#">Youtube search</a>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col py-4">
                 <form id="searchForm">
-                    <div class="form-row align-items-center">
+                    <div class="form-row px-md-5">
                         <div class="input-group mb-2">
-                            <input type="text" class="form-control" id="searchInput" name="searchInput" placeholder="search">
+                            <input type="text" class="form-control" id="searchField" name="searchInput" placeholder="search">
                             <div class="input-group-append">
                                 <input type="submit" class="btn btn-danger" value="search">
                             </div>
@@ -29,19 +29,17 @@
                 </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="row px-0 px-lg-5">
+            <div class="col-12 col-lg-6 mb-3">
                 <div class="embed-responsive embed-responsive-21by9">
                     <iframe class="embed-responsive-item" id="player" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com" frameborder="0"></iframe>
                 </div>
             </div>
+            <div class="col-12 col-lg-6">
+                <ul class="list-group" id="videoList">
+                </ul>
+            </div>
         </div>
-        <div class="col-12">
-            <ul class="list-unstyled" id="list">
-                <li></li>
-            </ul>
-        </div>
-
     </div>
 
 
