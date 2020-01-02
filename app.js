@@ -31,7 +31,7 @@ $(function() {
                 $("#player").attr("src", url);
 
                 results.forEach((a) => {
-                    let li = `<li class="list-group-item"><div class="media mb-3" id="${a.id.videoId}">
+                    let li = `<li class="list-group-item" id="${a.id.videoId}"><div class="media mb-3" >
                     <img class="align-self-center mr-2 d-none d-lg-block" src="${a.snippet.thumbnails.medium.url}" alt="">
                     <img class="align-self-center mr-2 d-block d-lg-none" src="${a.snippet.thumbnails.default.url}" alt="">
                     <div class="media-body" >
