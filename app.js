@@ -16,7 +16,7 @@ $(function() {
                 method: "GET",
                 url: "https://www.googleapis.com/youtube/v3/search",
                 data: {
-                    key: 'AIzaSyD-A54cg4_xQnDJCUtoY-ZWbm4DispeR58',
+                    key: 'AIzaSyDlAbO-HNviplI89YD0HUd8QyzwoO5vz0Q',
                     q: searchTerm,
                     part: 'snippet',
                     maxResults: 10,
